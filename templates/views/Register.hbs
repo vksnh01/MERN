@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+<body>
+    {{>Navbar}}
+    
+    <div class="signup-main-div">
+        <div class="signup-title-div">
+        <h1>Sign up Register Form</h1>
+        </div>
+   <form action="/register" method="post"class="signup-form-div">
+    <div class="signup-form-in-div">
+    <div class="signup-form-input">
+        <input  type="text" placeholder="First Name*" name="fname" autocomplete="off">
+    </div>
+     <div class="signup-form-input">
+        <input type="text" placeholder="Last Name*" name="lname" autocomplete="off">
+    </div>
+     <div class="signup-form-input">
+        <input type="email" placeholder="Your Email-id*" name="email" autocomplete="off">
+    </div>
+    <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male"  >male</label>
+         <input type="radio"id="female"  name="gender" value="female" >
+         <label for="female">female</label>
+    </div>
+     <div class="signup-form-input">
+        <input type="number" placeholder="Phone Number*" name="contact" autocomplete="off">
+    </div>
+    <div class="signup-form-input">
+        <label for="dob" >DOB</label>
+        <input type="date" id="dob" name="dob" autocomplete="off">
+    </div>
+     <div class="signup-form-input">
+        <input type="text" placeholder="Your Age*" name="age" autocomplete="off">
+    </div>
+     <div class="signup-form-input">
+        <input type="text" placeholder="City*" name="city" autocomplete="off">
+    </div>
+     <div class="signup-form-input">
+        <input type="password" placeholder="Password*" name="password" autocomplete="off">
+    </div>
+    <div class="signup-form-input">
+        <input type="password" placeholder="Confirm Password*" name="confirm_password" autocomplete="off">
+    </div>
+    <input type="submit"class="submit-btn" value="signup">
+    <div class="signup-signin-btn-div">
+    <p>if you already signup!</p>
+    <a href="/login">sign in</a>
+    </div>
+    </div>
+    </div>
+   </form>
+    </div>
+</body>
+</html>

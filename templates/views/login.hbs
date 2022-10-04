@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+<body>
+    {{>Navbar}}
+    <div class="login-main-div">
+        {{!-- <p>Employees Login Page</p> --}}
+            <form action="/login" method="POST" class="login-second-div">
+                 <input class="login-second-div-input" name="email"  type="email" placeholder="Enter Your Email Address" autocomplete="off">
+                <input class="login-second-div-input" name="password" type="password" placeholder="Enter your password" autocomplete="off">
+                <input type="submit" class="login-second-submit" value="signin">
+            </form>
+    </div>
+</body>
+</html>
